@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="849a81b6-267a-4e71-a55b-272c27820645" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/base/_typography.smcs.scss" afterPath="$PROJECT_DIR$/app/smacss/base/_typography.smcs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/mixins/_mixins.smcs.scss" afterPath="$PROJECT_DIR$/app/smacss/mixins/_mixins.smcs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/theme/_theme.smcs.scss" afterPath="$PROJECT_DIR$/app/smacss/theme/_theme.smcs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_home.stl.scss" afterPath="$PROJECT_DIR$/app/views/home/_home.stl.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/scss/_home.zn.scss" afterPath="$PROJECT_DIR$/app/views/home/scss/_home.zn.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/master.css" afterPath="$PROJECT_DIR$/build/css/master.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/master.css.map" afterPath="$PROJECT_DIR$/build/css/master.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/regions/header/title/scss/_title.zn.scss" afterPath="$PROJECT_DIR$/app/regions/header/title/scss/_title.zn.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/scss/_home.dft.scss" afterPath="$PROJECT_DIR$/app/views/home/scss/_home.dft.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/views/home.tpl.html" afterPath="$PROJECT_DIR$/build/views/home.tpl.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,71 +21,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="_home.stl.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/home/_home.stl.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_title.hdr.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/regions/header/title/_title.hdr.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_title.dft.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_title.dft.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/regions/header/title/scss/_title.dft.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
-                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_home.zn.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/home/scss/_home.zn.scss">
+          <file leaf-file-name="_title.zn.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/regions/header/title/scss/_title.zn.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.tpl.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/home/home.tpl.pug">
+          <file leaf-file-name="title.hdr.pug" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/regions/header/title/title.hdr.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_typography.smcs.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/smacss/base/_typography.smcs.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_theme.smcs.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/smacss/theme/_theme.smcs.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -104,8 +58,8 @@
           <file leaf-file-name="_home.dft.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/home/scss/_home.dft.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <state relative-caret-position="342">
+                  <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -137,7 +91,6 @@
         <option value="$PROJECT_DIR$/build/index.html" />
         <option value="$PROJECT_DIR$/gulp.config.js" />
         <option value="$PROJECT_DIR$/app/regions/sources/app/links/app-links.rgn.pug" />
-        <option value="$PROJECT_DIR$/app/views/home/home.tpl.pug" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/smacss/theme/_theme.smcs.scss" />
         <option value="$PROJECT_DIR$/app/smacss/base/_typography.smcs.scss" />
@@ -145,8 +98,11 @@
         <option value="$PROJECT_DIR$/app/views/home/scss/_home.zn.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_home.stl.scss" />
         <option value="$PROJECT_DIR$/app/regions/header/title/_title.hdr.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/scss/_home.dft.scss" />
         <option value="$PROJECT_DIR$/app/regions/header/title/scss/_title.dft.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/home.tpl.pug" />
+        <option value="$PROJECT_DIR$/app/regions/header/title/title.hdr.pug" />
+        <option value="$PROJECT_DIR$/app/regions/header/title/scss/_title.zn.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/scss/_home.dft.scss" />
       </list>
     </option>
   </component>
@@ -248,12 +204,12 @@
       <workItem from="1505323724673" duration="5124000" />
       <workItem from="1505329953743" duration="441000" />
       <workItem from="1505330980624" duration="623000" />
-      <workItem from="1505334183333" duration="5067000" />
+      <workItem from="1505334183333" duration="5762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16977000" />
+    <option name="totallyTimeSpent" value="17672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="24" width="1368" height="780" extended-state="6" />
@@ -267,7 +223,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.669697" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.669697" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -479,14 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/home.tpl.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/smacss/base/_base.smcs.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -535,14 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/scss/_home.zn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_home.stl.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -551,18 +491,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/header/title/_title.hdr.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/scss/_home.zn.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/scss/_home.dft.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/home.tpl.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/header/title/_title.hdr.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -570,7 +518,31 @@
     <entry file="file://$PROJECT_DIR$/app/regions/header/title/scss/_title.dft.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/header/title/title.hdr.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/header/title/scss/_title.zn.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/scss/_home.dft.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
