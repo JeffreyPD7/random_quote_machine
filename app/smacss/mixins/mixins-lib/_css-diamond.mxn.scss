@@ -1,0 +1,38 @@
+
+//css-diamond
+@mixin css-diamond($color, $size: 50px, $postition: absolute) {
+
+  //Declaring Variables
+  $top-diamond: null;
+  $sides-diamond: null;
+  $bottom-diamond: null;
+
+  //Palletes
+  @if $color == white {
+    $top-diamond: #FAFAFA;
+    $sides-diamond: #F5F5F5;
+    $bottom-diamond: #EEEEEE;
+  }
+  @else if $color == mid-white {
+    $top-diamond: #FAFAFA;
+    $sides-diamond: #EEEEEE;
+    $bottom-diamond: #BDBDBD;
+  }
+
+  @include pseudo;
+  &:before {
+    @include pseudo;
+    box-shadow: $size $size $top-diamond, 0 $size $sides-diamond;
+    width: $size;
+    height: $size;
+    transform: rotate(-45deg);
+  }
+
+  &:after {
+    @include pseudo;
+    box-shadow: ($size*2) (-$size) $sides-diamond, ($size*2) 0 $bottom-diamond;
+    width: $size;
+    height: $size;
+    transform: rotate(45deg);
+  }
+}

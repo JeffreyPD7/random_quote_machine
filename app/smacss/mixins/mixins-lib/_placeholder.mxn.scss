@@ -1,0 +1,29 @@
+// Placeholder
+.plc {
+  background-color: #BDBDBD;
+
+  > .plc {
+    background-color: #9E9E9E;
+
+    > .plc {
+      background-color: #757575;
+    }
+  }
+
+  > > .plc {
+    background-color: #9E9E9E;
+
+    > > .plc {
+      background-color: #757575;
+    }
+  }
+
+  > > > .plc {
+    background-color: #9E9E9E;
+
+    > > > .plc {
+      background-color: #757575;
+    }
+
+  }
+}

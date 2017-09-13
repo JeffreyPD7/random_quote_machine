@@ -1,0 +1,37 @@
+
+html {
+  overflow: hidden;
+}
+
+// Defaulting a tags
+a {
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+p {
+  font-family: 'Ubuntu Light', Fallback, sans-serif;
+  font-weight: 900;
+}
+
+// Centering Columns
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+// Takes off hyper link border from ng-click events
+*:focus {
+  outline: none;
+  border: 0;
+}
+
+@import "typography.smcs";
+
+
+
+
+

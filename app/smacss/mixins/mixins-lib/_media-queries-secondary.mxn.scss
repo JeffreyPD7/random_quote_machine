@@ -1,0 +1,57 @@
+/* Media queries
+A massive time saver! You can just use pixel values but we have some default breakpoints setup that work too, another
+ time saver while keeping your breakpoints consistent.
+*/
+
+// Default Breakpoints
+//$breakpoints: (
+//    "phone":        400px,
+//    "phone-wide":   480px,
+//    "phablet":      560px,
+//    "tablet-small": 640px,
+//    "tablet":       768px,
+//    "tablet-wide":  1024px,
+//    "desktop":      1248px,
+//    "desktop-wide": 1440px
+//);
+
+//Custom Breakpoints
+//NOTE: Do not place number values next to breakpoint names, it will not work
+$breakpoints: (
+        "phone":        362px,
+        "phone-wide":   480px,
+        "phablet":      601px,
+        "tablet-small-xs": 769px,
+        "tablet-sm":       992px,
+        "tablet-wide":  null,
+        "desktop-md":   1200px,
+        "desktop-wide": null
+);
+
+// Change "type" to min variable if scaled media querie backwards
+@mixin mq($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+// The example below showing the padding and font-size increasing once the viewport gets over 1024px.
+
+/*
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+
+//Source - http://engageinteractive.co.uk/blog/top-10-scss-mixins

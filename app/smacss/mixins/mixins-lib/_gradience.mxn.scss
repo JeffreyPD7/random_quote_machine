@@ -1,0 +1,53 @@
+/***
+  Gradient effect ~
+    default gradience, white and black
+
+  Parameters ~
+    $fade: opacity of color
+      *default: 0.3
+
+    $orientation: gradient direction
+      *default: top-bottom
+
+    $radius-bool: if value exist, express 'true'
+      *default: 'false'
+
+    $radius-value: value of roundness
+      *default: none
+
+  Usage ~
+    @include gradience(0.5,true,inherit);
+      or
+    @include gradience(0.5,false);
+      or
+    @include gradience();
+      or
+    @include gradience($radius-bool:true,$radius-value: 5px)
+      <The above example is if in case you'd like to change certain arguments>
+
+  DISCLAIMER ~
+    If parent measure of width is percentage value,
+      the output will be disproportional
+ */
+
+
+@mixin gradience($fade:0.3, $orientation: top-bottom, $percent: 0%, $radius-bool: false, $radius-value: none) {
+  @if $orientation == top-bottom {
+    background: linear-gradient(rgba(black, $fade) $percent, rgba(white, $fade));
+  }
+  @else if $orientation == right-left {
+    background: linear-gradient(to right,rgba(black, $fade) $percent, rgba(white, $fade));
+  }
+  @else if $orientation == left-right {
+    background: linear-gradient(to left,rgba(black, $fade) $percent, rgba(white, $fade));
+  }
+  @else if $orientation == bottom-top {
+    background: linear-gradient(to top,rgba(black, $fade) $percent, rgba(white, $fade));
+  }
+
+  height: inherit;
+  width: inherit;
+  @if $radius-bool {
+    border-radius: $radius-value;
+  }
+}

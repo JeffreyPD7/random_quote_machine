@@ -1,0 +1,70 @@
+
+.about {
+  &--lyt-header {
+    //XS
+    @include mq('tablet-small-xs') {
+      margin-top: 7% !important;
+      margin-bottom: 1% !important;
+    }
+
+    //XS-480
+    @include mq('phone-wide') {
+      margin-bottom: 10% !important;
+    }
+  }
+
+  &--lyt-selfPortrait {
+    //XS
+    @include mq('tablet-small-xs') {
+      //margin-bottom: 5%;
+    }
+
+    //XS-601
+    @include mq('phablet') {
+      //margin-bottom: 15%;
+      width: 36%;
+    }
+
+    //XS-480
+    @include mq('phone-wide') {
+      width: 60%;
+      margin-bottom: 7% !important;
+    }
+  }
+
+  &--lyt-bio {
+    //XS
+    @include mq('tablet-small-xs') {
+      //margin-bottom: 15%;
+      width: 62.66666667%;
+    }
+
+    //XS-601
+    @include mq('phablet') {
+      margin-bottom: 20%;
+      width: 60%;
+    }
+
+    //XS-480
+    @include mq('phone-wide') {
+      width: 80%;
+      margin-bottom: 30% !important;
+    }
+  }
+
+  &--lyt-XS {
+    //XS-480
+    @include mq('phone-wide') {
+      display: none;
+    }
+  }
+
+  &--lyt-XS-480 {
+    display: none;
+
+    //XS-480
+    @include mq('phone-wide') {
+      display: block;
+    }
+  }
+}

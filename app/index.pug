@@ -1,0 +1,28 @@
+doctype html
+html(ng-app='blankApp')
+    //- TODO: Set ng-app
+
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible' content='ie=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        title Blank
+        //- TODO: Set title name
+
+        include regions/sources/bower-lib/links/bower-libs_links.rgn.pug
+        include regions/sources/app/links/app-links.rgn.pug
+
+    body
+        div(ng-view)
+
+        include regions/sources/bower-lib/scripts/bower-libs_scripts.rgn.pug
+        include regions/sources/app/scripts/app-scripts.rgn.pug
+
+
+
+
+
+
+

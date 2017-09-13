@@ -1,0 +1,48 @@
+/***
+  Body Shadow Effect ~
+
+  Parameters ~
+    $orientation: shadow direction
+      *default: down
+
+    $distance: space between the body and shadow
+      *default: 3px
+
+    $blur: density spread value of shadow
+      *default: 3px
+
+    $color: color of shadow
+      *default: black
+
+    $opacity: opacity of color
+      *default: 0.3
+
+  Usage ~
+    @include body-shadow(up,5px,6px,white,0.8);
+      or
+    @include body-shadow(left,10px);
+      or
+    @include body-shadow();
+      or
+    @include body-shadow($distance: 12px,$color:gray)
+      <The above example is if in case you'd like to change certain arguments>
+
+  DISCLAIMER ~
+    General colors are valid in mixin; the $color argument will not work if a hex value is placed
+ */
+
+
+@mixin body-shadow($orientation: down, $distance: 3px, $blur: 3px, $color: black, $opacity: 0.5) {
+  @if $orientation == up {
+    box-shadow: 0 -$distance $blur rgba($color,$opacity);
+  }
+  @else if $orientation == right {
+    box-shadow: $distance 0 $blur rgba($color,$opacity);
+  }
+  @else if $orientation == down {
+    box-shadow: 0 $distance $blur rgba($color,$opacity);
+  }
+  @else if $orientation == left {
+    box-shadow: -$distance 0 $blur rgba($color,$opacity);
+  }
+}

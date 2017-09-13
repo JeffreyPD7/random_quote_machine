@@ -1,0 +1,10 @@
+
+// This function calculates the height and width of an image (or block), and while taking the new height measurement it
+// sets the new width within its ratio.
+
+@function aspect-ratio($original-height, $original-width, $new-height_OR_width) {
+  $new-value: ($original-height / $original-width) * $new-height_OR_width;
+  @return round($new-value);
+}
+
+

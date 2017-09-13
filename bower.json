@@ -1,0 +1,105 @@
+{
+  "name": "blank app",
+  "main": "app.js",
+  "authors": [
+    "Jeff <JP7Kode@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.6.5",
+    "angularfire": "~2.3.0",
+    "angular-material": "~1.1.4",
+    "angular-route": "~1.6.5",
+    "animate.css": "^3.5.2",
+    "bootstrap": "~3.3.7",
+    "components-font-awesome": "^4.7.0",
+    "css-hamburgers": "^0.9.1",
+    "es5-shim": "~4.5.9",
+    "ExplorerCanvas": "*",
+    "firebase": "~4.2.0",
+    "jquery": "~3.2.1",
+    "angulartics-google-analytics": "^0.4.0"
+  },
+  "devDependencies": {},
+  "overrides": {
+
+    "_comment-1": [
+      "-----------------------------------------",
+      "--   The list below is for CSS links   --",
+      "-----------------------------------------"
+    ],
+
+    "angular-material": {
+      "main": [
+        "angular-material.min.js",
+        "angular-material.min.css"
+      ]
+    },
+    "animate.css": {
+      "main": "./animate.min.css"
+    },
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "components-font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    },
+    "css-hamburgers": {
+      "main": "dist/hamburgers.min.css"
+    },
+
+    "_comment-2": [
+      "-----------------------------------------------------",
+      "-- The following list below is for Scripts Sources --",
+      "-----------------------------------------------------"
+    ],
+
+    "angular": {
+      "main": "./angular.min.js"
+    },
+    "angularfire": {
+      "main": "dist/angularfire.min.js"
+    },
+    "angular-animate": {
+      "main": "./angular-animate.min.js"
+    },
+    "angular-aria": {
+      "main": "./angular-aria.min.js"
+    },
+    "angular-messages": {
+      "main": "./angular-messages.min.js"
+    },
+    "angular-route": {
+      "main": "./angular-route.min.js"
+    },
+    "angulartics": {
+      "main": "dist/angulartics.min.js"
+    },
+    "angulartics-google-analytics": {
+      "main": "dist/angulartics-ga.min.js"
+    },
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    },
+    "es5-shim": {
+      "main": "es5-shim.min.js"
+    },
+    "protonet/jquery.inview": {
+      "main": "jquery.inview.min.js"
+    }
+  }
+}
