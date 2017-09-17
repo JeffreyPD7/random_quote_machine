@@ -6,7 +6,8 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Slackey');
 
 
 
@@ -26,12 +27,12 @@
 
 //$fontsDir: '../../assets/fonts/';
 
-// Days One
-//@font-face {
-//  font-family: 'days-one';
-//  src: url('../../assets/fonts/Days_One/DaysOne-Regular.ttf');
-//  font-weight: 500;
-//}
+// Slackey
+@font-face {
+  font-family: 'slackey';
+  src: url('../../assets/fonts/Slackey/Slackey-Regular.ttf');
+  font-weight: 500;
+}
 
 // Ubuntu
 //@font-face {

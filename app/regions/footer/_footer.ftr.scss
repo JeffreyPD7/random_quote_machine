@@ -5,7 +5,7 @@
 
 .footer {
   height: auto;
-  background-color: gray;
+  //background-color: gray;
 
   // Temp
   position: absolute;
@@ -19,7 +19,12 @@
     width: 12%;
     margin: 0 1.142857143%;
     text-align: center;
-    //text-shadow: inset 0px 3px 2px 0 rgba(0, 0, 0, 0.35);
+    color: #074d85;
+    text-shadow: 1px 1px 1px rgba(black,1),
+    2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
   }
 }
 
@@ -28,6 +33,15 @@
   color: black;
   opacity: 0.5;
   margin: 10px 0;
+
+  &__h4 {
+    color: #074d85;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-weight: 900;
+  }
 }
 
 .footer_-_detail-1 {
@@ -36,7 +50,7 @@
   i {
     height: 1rem;
     line-height: 1rem;
-    color: black;
+    color: #074d85;
   }
 }
 
@@ -44,6 +58,7 @@
   text-align: left;
   border-left: 3px solid rgba(black,0.8);
 }
+
 
 // Layouts ---------------------------------------------------------------------
 
