@@ -8,7 +8,6 @@
 | Filename | line # | TODO
 |:------|:------:|:------
 | gulp.config.js | 35 | Set module path name
-| gulp.config.js | 86 | Replicate for more modules
 | gulpfile.js | 45 | Replicate with incremented number of mod for more modules
 | gulpfile.js | 56 | Replicate with incremented number of mod for more modules
 | gulpfile.js | 65 | Replicate with incremented number of mod for more modules
@@ -20,4 +19,3 @@
 | app.js | 17 | Set pathName for $routeProvider
 | app.js | 21 | Set pathName for $routeProvider
 | index.pug | 3 | Set ng-app
-| index.pug | 12 | Set title name

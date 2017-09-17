@@ -1,6 +1,14 @@
 
+body {
+  background-color: #00bcd4;
+}
+
 //SMACSS
 @import "smacss/smacss.smcs";
+
+//Regions
+@import "regions/header/title/title.hdr";
+@import "regions/footer/footer.ftr";
 
 // Views
 @import "views/home/home.stl";

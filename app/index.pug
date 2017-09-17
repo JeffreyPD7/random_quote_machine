@@ -8,17 +8,25 @@ html(ng-app='blankApp')
         meta(name='description' content='')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
         meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        title Blank
-        //- TODO: Set title name
+        title Random Daily Satire
 
         include regions/sources/bower-lib/links/bower-libs_links.rgn.pug
         include regions/sources/app/links/app-links.rgn.pug
 
     body
-        div(ng-view)
+        div.container
+            // Header
+            include regions/header/title/title.hdr.pug
+
+            // Main
+            div(ng-view)
+
+            // Footer
+            include regions/footer/footer.ftr.pug
 
         include regions/sources/bower-lib/scripts/bower-libs_scripts.rgn.pug
         include regions/sources/app/scripts/app-scripts.rgn.pug
+
 
 
 

@@ -78,6 +78,10 @@ module.exports = function () {
                 base: app,
                 watch: [
                     app + '*.pug',
+                    aRegions + 'header/*.pug',
+                    aRegions + 'header/**/*.pug',
+                    aRegions + 'footer/*.pug',
+                    aRegions + 'footer/**/*.pug',
                     aSources + '*.pug',
                     aSources + '**/*.pug'
                 ],
@@ -131,6 +135,10 @@ module.exports = function () {
             app + 'smacss/*.scss',
             app + 'smacss/**/*.scss',
             app + 'smacss/**/**/*.scss',
+            aRegions + 'header/*.scss',
+            aRegions + 'header/**/*.scss',
+            aRegions + 'footer/*.scss',
+            aRegions + 'footer/**/*.scss',
             aViews + '**/*.scss',
             aViews + '**/global/*.scss',
             aViews + '**/sections/*.scss',

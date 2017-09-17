@@ -1,7 +1,139 @@
 
-@import "scss/title.dft";
-@import "scss/title.zn";
-@import "scss/title.xs";
-@import "scss/title.sm";
-@import "scss/title.md";
-@import "scss/title.lg";
+/* Default Class Values
+======================*/
+// Box
+$height: 100%;
+
+// Color & Background
+$background-color: $primary-clr;
+
+// Positioning
+
+// Font & Text
+$font-family:'Encode Sans', sans-serif;
+$font-size: 50px;
+$color: blue;
+$text-align: center;
+
+/*====================*/
+
+/*------------------------------------------------------------------------------
+ Default |
+-------*/
+.header {
+  padding: 0 15px;
+  font-family: $font-family;
+  color: white;
+}
+
+.header_-_title {
+  text-align: center;
+  text-shadow: 0 3px 7px rgba(black, 0.3);
+}
+
+.header_-_horizontal-line {
+  height: 4px;
+
+  &::before,
+  &::after {
+    @include pseudo();
+    background-color: white;
+    height: inherit;
+    width: 38%;
+    border-radius: 20px;
+    box-shadow: 0 3px 7px rgba(black, 0.1);
+  }
+
+  &::before { left: 10%; }
+  &::after { right: 10%; }
+}
+
+.header_-_details {
+  text-align: center;
+  line-height: 0;
+  text-shadow: 0 3px 7px rgba(black, 0.3);
+}
+
+/*******************************************************************************
+* XS |
+****/
+
+@include mq('xs') {
+  .header_-_horizontal-line {
+    //$gap: 4%;
+    //$m-width: 30%;
+
+    &::before,
+    &::after {
+      @include pseudo();
+      width: 30%;
+    }
+
+    &::before { left: 18%; }
+    &::after { right: 18%; }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+- SM |
+---*/
+
+@include mq('sm') {
+  .title{
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+* MD |
+---*/
+
+@include mq('md') {
+  .title{
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+  LG |
+---*/
+
+@include mq('lg') {
+  .title{
+
+  }
+}
+

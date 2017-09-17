@@ -1,0 +1,117 @@
+
+/*******************************************************************************
+* Default |
+*********/
+
+.footer {
+  height: auto;
+  background-color: gray;
+
+  // Temp
+  position: absolute;
+  bottom: 0;
+}
+
+.footer_-_social-links {
+  margin: 5px auto;
+
+  i {
+    width: 12%;
+    margin: 0 1.142857143%;
+    text-align: center;
+    //text-shadow: inset 0px 3px 2px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+
+.footer_-_detail-1,
+.footer_-_detail-2 {
+  color: black;
+  opacity: 0.5;
+  margin: 10px 0;
+}
+
+.footer_-_detail-1 {
+  text-align: right;
+
+  i {
+    height: 1rem;
+    line-height: 1rem;
+    color: black;
+  }
+}
+
+.footer_-_detail-2 {
+  text-align: left;
+  border-left: 3px solid rgba(black,0.8);
+}
+
+// Layouts ---------------------------------------------------------------------
+
+
+
+
+/*******************************************************************************
+* XS |
+****/
+
+@include mq('xs') {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+* SM |
+****/
+
+@include mq('sm') {
+
+}
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+* MD |
+****/
+
+@include mq('md') {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+* LG |
+****/
+
+@include mq('lg') {
+
+}
+
