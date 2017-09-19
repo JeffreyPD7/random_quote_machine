@@ -211,6 +211,8 @@ gulp.task('todo', function() {
             './*.js',
             'app/*.*',
             'app/**/*.*',
+            '!./app{,/*.png}',//FIXME: png format file is not accepted by the gulp todo.
+            '!./app/**{,/*.png}',
             '!./node_modules{,/**}'
         ])
         .pipe(plumber())
@@ -256,6 +258,7 @@ gulp.task('watch-docs-todo',['todo','documentation'],function () {
 // Static Section - No need to tamper with these codes /////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
+// This lists all tasks within gulp
 gulp.task('help', taskListing);
 gulp.task('default', ['help']);
 

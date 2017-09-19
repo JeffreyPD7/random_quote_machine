@@ -4,7 +4,7 @@
 *********/
 
 .home {
-
+  margin-top: 15rem;
 }
 
 .home_-_quote {
@@ -12,37 +12,68 @@
   height: auto;
   background-color: #b2ebf2;
   border-radius: 10px;
-  margin-top: 5rem;
   font-family: 'Slackey', 'cursive';
+  box-shadow: 0 3px 7px rgba(black, 0.3);
 
-  &::before,
-  &::after {
-    @include pseudo();
-    color: $secondary-2-clr
+  &__img--open,
+  &__img--closed {
+    position: absolute;
+    height: 5rem;
+    filter: drop-shadow(0 3px 7px rgba(black, 0.3));
   }
 
-  &::before {
-    font-family: 'Slackey', 'cursive';
-    content: open-quote;
-    font-size: 3rem;
+  &__img--open {
+    left: -50px;
+    top: -30px;
   }
+
+  &__img--closed {
+    right: -60px;
+    bottom: -20px;
+  }
+
 
   &__h2 {
+    //line-height: 0;
+    padding-bottom: 1.5rem;
+    vertical-align: middle;
     text-align: center;
     font-family: 'Courgette', 'cursive';
   }
 }
 
-
-.home_-_open-quote {
-  h2 {
-    font-family: 'Slackey', 'cursive';
-
-  }
+.home_-_button {
+  top: 0;
+  background-color: $secondary-1-clr;
+  margin-top: 3rem;
+  height: 5rem;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: All 120ms ease;
+  box-shadow: 0 5px 0 #ff6600;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  line-height: 1rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  user-select: none;
 }
 
+// Hover -----------------------------------------------------------------------
+.home_-_button:active {
+  top: 5px;
+  transition: All 120ms ease;
+  box-shadow: none;
+}
 
-
+// Vertical Media Query --------------------------------------------------------
+@media screen and ( max-height: 600px ) {
+  .home {
+    margin-top: 10rem;
+  }
+}
 
 
 /*******************************************************************************

@@ -4,26 +4,21 @@
 *********/
 
 .footer {
-  height: auto;
-  //background-color: gray;
-
-  // Temp
   position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 8.5rem;
+  background-color: transparent;
 }
 
 .footer_-_social-links {
-  margin: 5px auto;
-
   i {
     width: 12%;
     margin: 0 1.142857143%;
     text-align: center;
     color: #074d85;
-    text-shadow: 1px 1px 1px rgba(black,1),
-    2px 2px 3px rgba(255,255,255,0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    opacity: 0.5;
+    text-shadow: 1px 2px 3px rgba(255,255,255,0.5);
     background-clip: text;
   }
 }
@@ -31,14 +26,12 @@
 .footer_-_detail-1,
 .footer_-_detail-2 {
   color: black;
-  opacity: 0.5;
-  margin: 10px 0;
+  margin: 0px 0;
 
   &__h4 {
     color: #074d85;
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    text-shadow: 1px 2px 3px rgba(255,255,255,0.5);
+    opacity: 0.5;
     background-clip: text;
     font-weight: 900;
   }
@@ -48,7 +41,6 @@
   text-align: right;
 
   i {
-    height: 1rem;
     line-height: 1rem;
     color: #074d85;
   }
@@ -56,7 +48,16 @@
 
 .footer_-_detail-2 {
   text-align: left;
-  border-left: 3px solid rgba(black,0.8);
+
+  &::before {
+    @include pseudo();
+    height: 3rem;
+    width: 3px;
+    left:0;
+    top:10px;
+    background-color: rgba(black, 0.3);
+    border-radius: 5px;
+  }
 }
 
 

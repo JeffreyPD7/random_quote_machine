@@ -1,6 +1,18 @@
 
 html {
   //overflow: hidden;
+  //position: relative;
+  //min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  //margin-bottom: 120px;
+
+  @media screen and ( max-height: 600px ) {
+    height: 50rem;
+  }
+
 }
 
 // Defaulting a tags
