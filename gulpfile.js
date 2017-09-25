@@ -89,16 +89,22 @@ gulp.task('build-scripts', function () {
  */
 
 function watchTask(fileType,fileName) {
-    var src = config.pug[fileName].src;
-    var base = config.pug[fileName].base;
-    var dest = config.pug[fileName].dest;
+    var src, base, dest;
 
     if (fileType === 'pug') {
+        src = config.pug[fileName].src;
+        base = config.pug[fileName].base;
+        dest = config.pug[fileName].dest;
+
         pugTask(src,base,dest).on('change', function(event) {
             changeEvent(event);
         });
 
     } else if (fileType === 'script') {
+        src = config.scripts[fileName].src;
+        base = config.scripts[fileName].base;
+        dest = config.scripts[fileName].dest;
+
         scriptsTask(src, base).on('change', function (event) {
             changeEvent(event);
         });

@@ -1,8 +1,12 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     "use strict";
 
-    var quoteSource = [
+    function t(printOut) {
+        console.log(printOut);
+    }
+
+    var quotes = [
         {
             quote: "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible.",
             name: "Francis of Assisi"
@@ -102,8 +106,96 @@ $(document).ready(function() {
 
     ];
 
-    $('#home_-_button').click(function(evt) {
+    // var memorizeQuotes = [];
+
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    var animationIn = 'animated bounceIn';
+    var animationOut = 'animated bounceOut';
+
+    $('#home_-_button').on('click', function (e) {
+        e.preventDefault();
+        // var quotesLength = quotes.length;
+        // var rand = Math.floor(Math.random() * quotesLength);
+
+        // $('#home_-_quote').animateCss('zoomOut');
+
+        // $('#home_-_quote')
+        //     .addClass(animationIn)
+        //     .one(animationEnd, function () {
+        //         $(this).removeClass(animationIn);
+        //     });
+
+        $('#home_-_quote')
+            .addClass('minimize')
+            .one(animationEnd, function () {
+                $(this).removeClass('minimize');
+            });
+
+
+        $('#home_-_quote')
+            .addClass(animationOut)
+            .one(animationEnd, function () {
+                $(this).removeClass(animationOut);
+            });
+
+
+        // Get random quotes
+        $.ajax({
+            url: "https://api.forismatic.com/api/1.0/?",
+            dataType: "jsonp",
+            data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
+            success: function (response) {
+                $('#home_-_quote__h2')
+                    .delay(400)
+                    .queue(function (n) {
+                        $(this).html(response.quoteText);
+                        $('#home_-_quote__h4').html(response.quoteAuthor);
+                        n();
+                    });
+
+                // $("#tweet").attr("href", "https://twitter.com/home/?status=" + response.quoteText +
+                //     ' (' + response.quoteAuthor + ')');
+            }
+        });
+
+
+        // $('#home_-_quote').animateCss('bounceOut').css('animation-direction','alternate');
+
+
+        // $('#home_-_quote').fadeOut(animatedTime, function() {
+        //
+        //     $('#home_-_quote').animateCss('bounceOut');
+        //     $('#home_-_quote').animateCss('bounceIn');
+        //
+        //     $('#home_-_quote__h2').html(quote);
+        //     $('#home_-_quote__h4').html(author);
+        //
+        //     $('#home_-_quote').fadeIn(animatedTime);
+        // });
+
+
+        t('end of function');
+
 
     }); //end of #home_-_button function
+
+    // Hover effect on Button
+    $('#home_-_button').hover(
+        function(){$(this).toggleClass('cssanimation effect3d', 2000);}
+    );
+
+
+
+
+    // Animate.css Function
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function () {
+                $(this).removeClass('animated ' + animationName);
+            });
+            return this;
+        }
+    });
 
 }); //end of document ready
