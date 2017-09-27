@@ -4,33 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849a81b6-267a-4e71-a55b-272c27820645" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scssLintPlugin.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/css/master.css.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO.md" afterPath="$PROJECT_DIR$/TODO.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.pug" afterPath="$PROJECT_DIR$/app/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/master.scss" afterPath="$PROJECT_DIR$/app/master.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/regions/footer/_footer.ftr.scss" afterPath="$PROJECT_DIR$/app/regions/footer/_footer.ftr.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/regions/footer/footer.ftr.pug" afterPath="$PROJECT_DIR$/app/regions/footer/footer.ftr.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/regions/header/title/_title.hdr.scss" afterPath="$PROJECT_DIR$/app/regions/header/title/_title.hdr.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/regions/header/title/title.hdr.pug" afterPath="$PROJECT_DIR$/app/regions/header/title/title.hdr.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/regions/sources/app/links/app-links.rgn.pug" afterPath="$PROJECT_DIR$/app/regions/sources/app/links/app-links.rgn.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/base/_base.smcs.scss" afterPath="$PROJECT_DIR$/app/smacss/base/_base.smcs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/base/_typography.smcs.scss" afterPath="$PROJECT_DIR$/app/smacss/base/_typography.smcs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/mixins/_mixins.smcs.scss" afterPath="$PROJECT_DIR$/app/smacss/mixins/_mixins.smcs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/mixins/mixins-lib/_media-queries.mxn.scss" afterPath="$PROJECT_DIR$/app/smacss/mixins/mixins-lib/_media-queries.mxn.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/smacss/theme/_theme.smcs.scss" afterPath="$PROJECT_DIR$/app/smacss/theme/_theme.smcs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_home.stl.scss" afterPath="$PROJECT_DIR$/app/views/home/_home.stl.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/home.tpl.pug" afterPath="$PROJECT_DIR$/app/views/home/home.tpl.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/scripts/home.jqr.js" afterPath="$PROJECT_DIR$/app/views/home/scripts/home.jqr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/master.css" afterPath="$PROJECT_DIR$/build/css/master.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/custom-libs/boot-mod-v1.min.css" afterPath="$PROJECT_DIR$/build/custom-libs/boot-mod-v1.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/scripts/home.jqr.js" afterPath="$PROJECT_DIR$/build/scripts/home.jqr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/views/home.tpl.html" afterPath="$PROJECT_DIR$/build/views/home.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-    </list>
+    <list default="true" id="849a81b6-267a-4e71-a55b-272c27820645" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -122,8 +96,8 @@
         <option value="$PROJECT_DIR$/app/regions/header/title/_title.hdr.scss" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/index.pug" />
-        <option value="$PROJECT_DIR$/app/regions/footer/footer.ftr.pug" />
         <option value="$PROJECT_DIR$/app/regions/footer/_footer.ftr.scss" />
+        <option value="$PROJECT_DIR$/app/regions/footer/footer.ftr.pug" />
       </list>
     </option>
   </component>
@@ -273,12 +247,12 @@
       <workItem from="1506359626217" duration="545000" />
       <workItem from="1506360196276" duration="5325000" />
       <workItem from="1506424186202" duration="2989000" />
-      <workItem from="1506527228651" duration="8884000" />
+      <workItem from="1506527228651" duration="9561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137563000" />
+    <option name="totallyTimeSpent" value="138240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,7 +265,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1368" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124242425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -301,7 +274,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4060606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4060606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
