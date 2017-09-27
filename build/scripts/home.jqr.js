@@ -112,6 +112,13 @@ $(document).ready(function () {
     var animationIn = 'animated bounceIn';
     var animationOut = 'animated bounceOut';
 
+
+    $('#home_-_quote')
+        .addClass(animationIn)
+        .one(animationEnd, function () {
+            $(this).removeClass(animationIn);
+        });
+
     $('#home_-_button').on('click', function (e) {
         e.preventDefault();
         // var quotesLength = quotes.length;
@@ -125,18 +132,24 @@ $(document).ready(function () {
         //         $(this).removeClass(animationIn);
         //     });
 
-        $('#home_-_quote')
-            .addClass('minimize')
-            .one(animationEnd, function () {
-                $(this).removeClass('minimize');
-            });
+        // $('#home_-_quote')
+        //     .addClass('minimize')
+        //     .one(animationEnd, function () {
+        //         $(this).removeClass('minimize');
+        //     });
 
 
         $('#home_-_quote')
             .addClass(animationOut)
             .one(animationEnd, function () {
-                $(this).removeClass(animationOut);
+                $(this).removeClass(animationOut)
+                    .delay(500)
+                    .addClass(animationIn)
+                    .one(animationEnd, function () {
+                        $(this).removeClass(animationIn);
+                    });
             });
+
 
 
         // Get random quotes
@@ -152,6 +165,14 @@ $(document).ready(function () {
                         $('#home_-_quote__h4').html(response.quoteAuthor);
                         n();
                     });
+
+                    // $('#home_-_quote')
+                    // .addClass(animationIn)
+                    // .one(animationEnd, function () {
+                    //     $(this).removeClass(animationIn);
+                    // });
+
+
 
                 // $("#tweet").attr("href", "https://twitter.com/home/?status=" + response.quoteText +
                 //     ' (' + response.quoteAuthor + ')');
@@ -180,9 +201,9 @@ $(document).ready(function () {
     }); //end of #home_-_button function
 
     // Hover effect on Button
-    $('#home_-_button').hover(
-        function(){$(this).toggleClass('cssanimation effect3d', 2000);}
-    );
+    // $('#home_-_button').hover(
+    //     function(){$(this).toggleClass('cssanimation effect3d', 2000);}
+    // );
 
 
 

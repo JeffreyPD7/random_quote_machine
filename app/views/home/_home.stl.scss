@@ -82,7 +82,6 @@
 
 // Active ----------------------------------------------------------------------
 #home_-_quote {
-  animation-name: example;
 
 }
 
@@ -93,36 +92,39 @@
 }
 
 // Animation -------------------------------------------------------------------
+
 #home_-_quote {
-  animation-duration: 3s;
-}
-
-.minimize {
-  animation-name: minimize;
-  animation-duration: 3s;
-}
-
-.maximize {
-  animation-name: maximize;
-  animation-duration: 3s;
+  animation-duration: 0.8s;
 }
 
 
 
-@keyframes minimize {
-  from {height: auto;}
-  to {height: 0 !important;}
-}
-
-@keyframes maximize {
-  from {height: 0;}
-  to {height: auto;}
-}
+//.minimize {
+//  animation-name: minimize;
+//  animation-duration: 3s;
+//}
+//
+//.maximize {
+//  animation-name: maximize;
+//  animation-duration: 3s;
+//}
+//
+//
+//
+//@keyframes minimize {
+//  from {height: auto;}
+//  to {height: 0 !important;}
+//}
+//
+//@keyframes maximize {
+//  from {height: 0;}
+//  to {height: auto;}
+//}
 
 // Vertical Media Query --------------------------------------------------------
 @media screen and ( max-height: 600px ) {
   .home {
-    margin-top: 10rem;
+    margin-top: -6rem;
   }
 }
 
@@ -137,16 +139,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*******************************************************************************
 * SM |
 ****/
@@ -157,31 +149,17 @@
 
 
 
-
-
-
-
-
-
-
 /*******************************************************************************
 * MD |
 ****/
 
 @include mq('md') {
-
+  .home_-_button {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*******************************************************************************
@@ -189,5 +167,8 @@
 ****/
 
 @include mq('lg') {
-
+  .home_-_quote {
+    margin-top: 9rem;
+  }
 }
+

@@ -48,6 +48,19 @@ $text-align: center;
   &::after { right: 10%; }
 }
 
+.header_-_horizontal-line-box {
+  height: 6px;
+  width: 6px;
+  background: white;
+  border-radius: 1px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: 0 3px 7px rgba(black, 0.1);
+}
+
 .header_-_details {
   text-align: center;
   line-height: 0;
@@ -86,6 +99,7 @@ $text-align: center;
 
 
 
+
 /*------------------------------------------------------------------------------
 - SM |
 ---*/
@@ -110,8 +124,14 @@ $text-align: center;
 ---*/
 
 @include mq('md') {
-  .title{
+  .header_-_horizontal-line {
+    &::before,
+    &::after {
+      width: 28%;
+    }
 
+    &::before { left: 20%; }
+    &::after { right: 20%; }
   }
 }
 

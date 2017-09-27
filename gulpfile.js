@@ -185,19 +185,20 @@ gulp.task('styles', function () {
                 this.emit('end');
             }
         }))
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(stripCssComments())
         // .pipe(sassdoc())
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write('.'))
+        // .pipe(cleanCSS())
+        // .pipe(sourcemaps.write('.'))
         // .pipe(autoprefixer({                  /* FIXME: gulp-autoprefixer! */
         //     browsers: [autoprefixBrowsers],
         //     cascade: false
         // }))
-        // .pipe(autoprefixer({
-        //     browsers: ['last 2 versions']
-        //     }))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+            }))
         .pipe(gulp.dest(config.css))
         .pipe(browserSync.stream())
         .on('end', function () {

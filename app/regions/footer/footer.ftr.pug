@@ -1,24 +1,70 @@
+//------------------------------------------------------------------------------
+  | Variables
+  -----------/
+-
+  var socialLinks = [
+      {name:'github', link:'https://github.com/JeffreyPD7/random_quote_machine'},
+      {name:'codepen', link:'https://codepen.io/JeffreyPD7/full/pWRRWG/'},
+      {name:'linkedin-square', link:'https://www.linkedin.com/in/jeffrey-paulino-40876712b'},
+      {name:'envelope-o', link:'mailto:jp7portfolio@gmail.com'},
+      {name:'briefcase', link:'https://jeffreypaulino.com/#!/home'},
+      {name:'twitter', link:'https://twitter.com/jeffreypb7'},
+      {name:'facebook-square', link:'https://www.facebook.com/jeffrey.paulino.376'}
+  ];
+
+// end of variables ------------------------------------------------------------
+
 footer.footer: div.container
-    div.row: div.col-12.footer_-_social-links
-        each val in ['github','codepen','linkedin-square','envelope-o','briefcase','twitter','facebook-square']
-            i.fa.fa-2x(class='fa-' + val aria-hidden='true')
+    div.row: div.col-12.hidden-sm.hidden-md.hidden-lg
 
-    div.row
-        div.col-6.footer_-_detail-1
-            h4.footer_-_detail-1__h4
-                | Made with a
-                |
-                i.fa.fa-keyboard-o.fa-2x(aria-hidden='true')
-                |
-                br
-                | by Jeffrey Paulino
+        div.row: div.col-12.footer_-_social-links
+            each val in socialLinks
+                a(href=val.link)
+                    i.fa.fa-2x(class='fa-' + val.name, aria-hidden='true')
 
-        div.col-6.footer_-_detail-2
-            h4.footer_-_detail-2__h4
-                | A project  from
-                br
-                | Free Code Camp
+        div.row
+            div.col-6.footer_-_detail-1
+                h4.footer_-_detail-1__h4
+                    | Made with a
+                    |
+                    i.fa.fa-keyboard-o.fa-2x(aria-hidden='true')
+                    |
+                    br
+                    | by Jeffrey Paulino
 
+            div.col-6.footer_-_detail-2
+                h4.footer_-_detail-2__h4
+                    | A project  from
+                    br
+                    | Free Code Camp
+
+
+
+    //--------------------------------------------------------------------------
+      SM
+      ---/
+
+    div.row: div.hidden-xs.col-sm-12
+        div.row
+            div.col-sm-3.footer_-_detail-1
+                h4.footer_-_detail-1__h4
+                    | Made with a
+                    |
+                    i.fa.fa-keyboard-o.fa-2x(aria-hidden='true')
+                    |
+                    br
+                    | by Jeffrey Paulino
+
+            div.col-sm-6.footer_-_social-links
+                each val in socialLinks
+                    a(href=val.link)
+                        i.fa.fa-2x(class='fa-' + val.name, aria-hidden='true')
+
+            div.col-sm-3.footer_-_detail-2
+                h4.footer_-_detail-2__h4
+                    | A project  from
+                    br
+                    | Free Code Camp
 
 
 
